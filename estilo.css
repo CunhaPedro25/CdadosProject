@@ -1,0 +1,112 @@
+body{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
+    background-image: url("img/server.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    height: 50px;
+    text-align: center;
+    background-color: blue;
+}
+
+header a button{
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    width: 100px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+header a:hover button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*footer*/
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color:  white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height:50px;
+    margin-top:auto;
+    color: black;
+    overflow: hidden;
+}
+footer p:last-child{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+footer img{
+    width: 50px;
+    transition: cubic-bezier();
+    margin: auto 15px;  
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+footer img:hover{
+    animation:spin 0.5s;
+}
+
+#wrapper{
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 700px;
+    margin: auto;
+}
+
+
+/*----------BUTTONS---------*/
+#button{
+    background: blue;
+    padding: 15px 20px;
+    border-radius: 3px;
+    color: #ebebeb;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.9);
+}
+
+/* width */
+body::-webkit-scrollbar {
+width: 3px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: #555;
+} 
