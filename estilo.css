@@ -6,7 +6,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     text-align: center;
-    background-image: url("img/server.png");
+    background-image: url("./img/server.png");
     background-size: cover;
     background-attachment: fixed;
 }
