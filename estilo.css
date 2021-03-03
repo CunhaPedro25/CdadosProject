@@ -83,14 +83,14 @@ footer img:hover{
 
 #wrapper{
     background-color: rgba(255, 255, 255, 0.75);
-    width: 700px;
+    width: 750px;
     margin-bottom: 90px;
     margin-left: auto;
     margin-right: auto; 
     border-radius: 10px;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:750px){
     #wrapper{
         width: 100%;
     }
