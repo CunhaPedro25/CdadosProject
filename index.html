@@ -8,21 +8,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
         <style>
             body{
-                color: white;
+                color: white;   
             }
-            
-            #content{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: auto
-            }
-            #content h1{
-                font-size: 40px;
+            #content p{
+                color: black;
+                font-size: 20px;;
             }
 
             #buttons-section{
-                display: inline-block; 
+                display: inline-block;
+                margin-bottom: 20px; 
             }
 
             #button:first-child{
@@ -31,6 +26,16 @@
             #button:last-child{
                 border-radius: 5px 50px 50px 5px;
             }
+
+            @media only screen and (max-width:365px){
+                #button:first-child{
+                    border-radius: 50px 50px 5px 5px;
+                    margin-bottom: 3px;
+                }
+                #button:last-child{
+                    border-radius: 5px 5px 50px 50px;
+                }
+            }
         </style>
     </head>
 
@@ -38,13 +43,24 @@
         <header>
             <a href="index.html"><button>Início</button></a><a href="bus.html"><button>Bus</button></a><a href="anel.html"><button>Anel</button></a>
         </header>
+
         <div id="content">
-            <h1>Topologias de Rede (Lógica)</h1> 
-            <div id="buttons-section">
-                <a id="button" href="bus.html">Barramento (Bus)</a> 
-                <a id="button" href="anel.html">Anel (Token-ring)</a>
+            <h1>Topologias de Rede (Lógica)</h1>
+            <div id="wrapper">
+                <p>
+                    A topologia lógica refere-se à maneira como os sinais agem sobre os meios de rede, 
+                    ou a maneira como os dados são transmitidos através da rede a partir de um dispositivo para o 
+                    outro sem ter em conta a interligação física dos dispositivos.
+                    <br><br>
+                    As Topologias lógicas são:
+                </p>
+                <div id="buttons-section">
+                    <a id="button" href="bus.html">Barramento (Bus)</a> 
+                    <a id="button" href="anel.html">Anel (Token-ring)</a>
+                </div>
             </div>
         </div>
+
         <footer>
             <a href="https://www.esmonserrate.org/" target="_blank" rel="noopener noreferrer">
                 <img src="./img/ESMlogo.png"/>
